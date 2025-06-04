@@ -1,0 +1,9 @@
+axios
+bootstrap
+jwt-decode
+leaflet
+react
+react-dom
+react-leaflet
+react-leaflet-heatmap-layer-v3
+react-router-dom

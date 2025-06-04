@@ -1,0 +1,82 @@
+.chat-container {
+  max-height: 500px; /* Or as desired */
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Spacing between messages */
+}
+
+.message {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.message-bubble {
+  max-width: 70%;
+  padding: 8px 12px;
+  border-radius: 15px;
+  word-wrap: break-word;
+}
+
+.message.sent {
+  justify-content: flex-end; /* Align sent messages to the right */
+}
+.message.sent .message-bubble {
+  background-color: #007bff; /* Bootstrap primary blue */
+  color: white;
+  border-bottom-right-radius: 5px; /* Typical chat bubble style */
+}
+
+.message.received {
+  justify-content: flex-start; /* Align received messages to the left */
+}
+.message.received .message-bubble {
+  background-color: #f1f0f0; /* Light grey for received messages */
+  color: #333;
+  border-bottom-left-radius: 5px; /* Typical chat bubble style */
+}
+
+.message-sender {
+  font-weight: bold;
+  display: block;
+  font-size: 0.9em;
+  margin-bottom: 2px;
+}
+.message.sent .message-sender {
+    /* color: #d1e7dd; */ /* Lighter color for "You" on dark background */
+}
+
+
+.message-content {
+  margin-bottom: 2px;
+  font-size: 1em;
+}
+
+.message-timestamp {
+  font-size: 0.75em;
+  color: #777;
+  display: block;
+  text-align: right;
+}
+.message.sent .message-timestamp {
+    color: #e0e0e0;
+}
+.message.received .message-timestamp {
+    color: #555;
+}
+
+
+.chat-input form {
+  display: flex;
+}
+
+.chat-input input {
+  flex-grow: 1;
+}

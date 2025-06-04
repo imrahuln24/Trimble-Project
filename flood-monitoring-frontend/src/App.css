@@ -1,0 +1,177 @@
+/* App.css */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: #f8f9fa; /* Bootstrap's light gray background */
+  color: #212529; /* Bootstrap's default text color */
+  line-height: 1.6;
+}
+
+/* General dashboard container styling from Dashboard.js */
+.dashboard-container {
+  /* py-4 and px-md-5 in Dashboard.js handle padding */
+}
+
+.dashboard-header h1.display-5 {
+  color: #343a40; /* Bootstrap dark gray */
+  font-weight: 400; /* Slightly bolder than default display-5 */
+  border-bottom: 1px solid #dee2e6; /* Separator line */
+  padding-bottom: 0.75rem;
+}
+
+/* Styling for AlertList section wrapper (card) */
+.alert-list-section.card {
+  border: none; /* Remove default card border if using shadow */
+}
+
+.alert-list-section .card-title.h4 { /* The "Alerts" heading inside the card */
+  color: #495057; /* A medium gray */
+  margin-bottom: 1rem;
+}
+
+.alert-list-section ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0; /* Remove default ul margin if it's the last child in card-body */
+}
+
+/* Styling for each alert item (li) */
+.alert-list-section li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0.75rem 0; /* Vertical padding */
+  border-bottom: 1px solid #e9ecef; /* Light separator line */
+}
+
+.alert-list-section li:first-child {
+  padding-top: 0.25rem; /* Less padding for the first item if h2 is present */
+}
+
+.alert-list-section li:last-child {
+  border-bottom: none;
+  padding-bottom: 0.25rem;
+}
+
+/* Container for the alert text (message + timestamp) */
+.alert-list-section .alert-content {
+  flex-grow: 1;
+  padding-right: 1rem; /* Space between text and button */
+}
+
+/* The main alert message, e.g., "High Water Level..." */
+.alert-list-section .alert-message {
+  display: block;
+  color: #dc3545; /* Red color for alert text, matching screenshot */
+  font-weight: bold; /* Bold text, matching screenshot */
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+/* The timestamp text, e.g., "6/2/2025, 9:08:05 PM" */
+.alert-list-section .alert-timestamp {
+  display: block;
+  font-size: 0.8em; /* Smaller font size, matching screenshot */
+  color: #6c757d; /* Muted gray color, matching screenshot */
+}
+
+/* The "Resolve" button */
+.alert-list-section .btn-resolve {
+  padding: 0.25rem 0.6rem; /* Adjusted padding to match screenshot button size */
+  font-size: 0.8rem;    /* Adjusted font size */
+  color: #212529;       /* Black text color */
+  background-color: #fff; /* White background */
+  border: 1px solid #ced4da; /* Standard gray border */
+  border-radius: 0.2rem; /* Slight border radius */
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  flex-shrink: 0; /* Prevent button from shrinking */
+  align-self: center; /* Vertically center button if text wraps */
+}
+
+.alert-list-section .btn-resolve:hover {
+  background-color: #e9ecef; /* Light gray on hover */
+  border-color: #adb5bd;
+}
+
+/* Styling for role-specific sections (cards) */
+.dashboard-section.card {
+  border: none; /* Remove default card border if using shadow */
+}
+
+.dashboard-section .card-title.h5 {
+  color: #007bff; /* Bootstrap primary color for section titles */
+  margin-bottom: 0.5rem;
+}
+
+.dashboard-section .card-text.text-muted {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.dashboard-button {
+  /* Specific overrides for dashboard buttons if needed, e.g., */
+  /* font-weight: 500; */
+}
+
+/* Leaflet map container default styling */
+.leaflet-container {
+  height: 380px; /* Adjust height as needed */
+  width: 100%;
+  border-radius: 0.25rem; /* Bootstrap's default border-radius */
+  border: 1px solid #dee2e6; /* Bootstrap's default border color */
+  margin-top: 1rem; /* Space above the map within its card section */
+}
+
+/* Ensure existing .App styles don't interfere if they were very specific */
+.App {
+  text-align: left; /* Override text-align: center if it was global */
+}
+
+/* Remove or comment out .App-logo, .App-header, .App-link, @keyframes App-logo-spin
+   if they are from a create-react-app template and no longer used, or style them as needed.
+   For this dashboard, they are likely not needed. */
+
+.App-logo { display: none; }
+.App-header { display: none; }
+/* etc. */
+
+/*.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+*/

@@ -1,0 +1,40 @@
+.dashboard-container {
+  background-color: #f8f9fa; /* Light grey background */
+}
+
+.dashboard-header {
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 0.5rem;
+}
+
+.dashboard-section .card-title {
+  color: #0056b3; /* A nice blue for titles */
+}
+
+.live-map-wrapper {
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  overflow: hidden; /* Ensures map stays within bounds */
+}
+
+/* Adjustments for smaller screens if needed */
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .live-map-wrapper {
+    height: 50vh; /* Adjust height for mobile */
+  }
+}
+
+/* Alert Notifications Styling (if not using React-Bootstrap Toasts) */
+.alert-notifications-container .list-group-item {
+  border-left-width: 5px;
+}
+.alert-notifications-container .list-group-item-danger {
+  border-left-color: #dc3545;
+}
+.alert-notifications-container .list-group-item-warning {
+  border-left-color: #ffc107;
+}
